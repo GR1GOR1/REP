@@ -1,0 +1,115 @@
+html, body {
+    height: 100%;
+
+  }
+body {
+    background: linear-gradient(to bottom right, blue, pink);
+    background-repeat: no-repeat;
+    background-size: cover; background-repeat: no-repeat; background-position: center center; background-attachment: fixed;
+    }
+header {
+    align-items: center;
+    text-align: center;
+}
+a {
+    color: white;
+}
+.nav-link {
+    color: white;
+}
+.navbar-toggler-icon {
+    color: white;
+}
+.navbar-toggler {
+    color: white;
+}
+.MainImg {
+    border-radius: 30% 0 0 0;
+    float: right;
+    margin-right: -2%;
+    width: 70%; 
+    height: 132%;
+}
+.NewForm {
+    background-color: white;
+    border: 0;
+    border-radius: 5%;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    z-index: 10;
+    width: 50%; 
+    height: auto;
+    
+    animation: showRight 1s;
+    
+}
+.BigStyleInfo {
+
+    font-weight: bold;
+    
+}
+.RepairInfo {
+    font-size: 123%;
+}
+/*Для темной версии браузера*/
+input[type='radio'] {
+
+    background-color: white;
+    border: 2px solid black;
+}
+#MainInfo {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+#LeftInfo{
+    color: #fff;
+    position: relative;
+    animation: showLeft 1s;
+
+}
+@keyframes showLeft {
+    from {left:-100%;}
+    to {left:0;}
+}
+#RightInfo{
+    position: relative;
+    animation:showRight 1s;
+}
+@keyframes showRight {
+    
+    from {right:-100%;}
+    to {right:0;}
+}
+#Arrow {
+    display: block;
+    margin-right: auto; 
+    margin-left: auto;
+    margin-top: 10%;
+    width: 55px;
+    height: 30px;
+    text-align: center;
+    color: white;
+
+    animation: downUp 1s infinite ease-in-out alternate;
+}
+
+
+@keyframes downUp { 
+    from {margin-top: 0px;}  
+    to {margin-top: -30px;}
+  }
+
+@media (min-width:320px) and (max-width:800px) {
+    .MainImg {
+        visibility: collapse;
+    }
+    .NewForm {
+    position: static;
+    top: 1%;
+    width: auto;
+    height: auto;
+    }
+}
+
